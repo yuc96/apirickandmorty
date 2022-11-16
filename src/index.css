@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color:var(--background);
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.dimensonname{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(61, 224, 96);
+    padding: 30px;
+}
+.datadimension{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+  color: azure;
+  padding: 20px;
+  list-style: none;
+}
+.searchinput{
+   background-color: rgb(16, 22, 19);
+   padding: 2px;
+   width: 85%;
+   border-radius: 20px;
+   text-indent:10px;
+   color: rgb(24, 185, 64);
+}
+button{
+  border-radius:20px;
+  width: 100px;
+  height: 30px;
+}
+button :hover{
+  cursor: pointer;
+  background-color: rgb(2, 39, 10);
+
+}
+.searchdiv{
+   padding: 20px;
+   display: flex;
+   flex-direction: row;
+   gap: 20px;
+}
+.listresidents{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  background-color: greenyellow;
+  padding: 20px;
+  gap: 30px;
+}
+.listresidents2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  background-color: rgb(13, 19, 5);
+  padding: 20px;
+  color: greenyellow;
+  gap: 3px;
+  border-style: solid;
+  border-color: red;
+}
+@media screen and (min-width:600px) {
+  .listresidents{
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: center;
+    list-style: none;
+    background-color: greenyellow;
+    padding: 20px;
+    gap: 30px;
+  }
+  .datadimension{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: space-between;
+    gap: 30px;
+  }
+}
